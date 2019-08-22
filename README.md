@@ -32,11 +32,11 @@ Illustration of the proposed basis learning method. Operations are converted to 
 ## Quick start
 
 ### Image classification
-For image classfication, go to [./image_classification](./image_classification)
+For image classfication, go to [`./image_classification`](./image_classification)
 
 ### Image super-resolution
 
-For image super-resolution, go to [./super_resolution](./super_resolution)
+For image super-resolution, go to [`./super_resolution`](./super_resolution)
 
 ## Results
 
