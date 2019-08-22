@@ -8,35 +8,27 @@
    ii)  Download Set5, Set14, B100, and Urban100 [benchmark](https://drive.google.com/file/d/1y8kIpiAa5s-fZ_R5pd4Aq2wJFPfgXFxB/view?usp=sharing).
    iii) Put the images in a folder called `super_resolution`. So the folder structure should be:
     
-    .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
-    
-	super_resolution
-    	├── DIV2K
-	│	├── DIV2K_train_HR
-	│	├── DIV2K_train_LR_bicubic
-	│	│	├── X2
-	│	│	├── X3
-	│	│	├── X4
-	│	├── DIV2K_valid_HR
-	│	├── DIV2K_valid_LR_bicubic
-	│	│	├── X2
-	│	│	├── X3
-	│	│	└── X4
-	│	└──
-	├── benchmark
-	│	├── Set5
-	│	├── Set14
-	│	├── B100
-	│	├── Urban100
-	│	└──
-	└──
+    super_resolution
+    ├── DIV2K
+    │   ├── DIV2K_train_HR
+    │   ├── DIV2K_train_LR_bicubic
+    │   │   ├── X2
+    │   │   ├── X3
+    │   │   ├── X4
+    │   ├── DIV2K_valid_HR
+    │   ├── DIV2K_valid_LR_bicubic
+    │   │   ├── X2
+    │   │   ├── X3
+    │   │   └── X4
+    │   └──
+    ├── benchmark
+    │   ├── Set5
+    │   ├── Set14
+    │   ├── B100
+    │   ├── Urban100
+    │   └──
+    └──
+
 	
 3. Download the test model from [Google drive](https://drive.google.com/file/d/1dUi2GVO2QD6kNwYY71ZOA1vw0BxwNyfU/view?usp=sharing).
 4. Be sure to change the following directories in [./option.py](./option.py).
