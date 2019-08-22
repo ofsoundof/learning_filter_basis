@@ -42,13 +42,13 @@ For image super-resolution, go to [./super_resolution](./super_resolution)
 
 ### Image classification
 
-![Classification](/figs/table5.png)
+![Classification](/figs/Table5.png)
 
 ### Image super-resolution
 
-![SRResNet_EDSRlight](/figs/table2.png)
+![SRResNet_EDSRlight](/figs/Table2.png)
 
-![EDSR](/figs/table3.png)
+![EDSR](/figs/Table3.png)
 
 
 ## Reference
