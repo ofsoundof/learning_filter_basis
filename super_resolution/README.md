@@ -7,9 +7,18 @@
    i)   Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) training and validation images. Please download the low-resolution images in the NTIRE-2017 challenge. 
    ii)  Download Set5, Set14, B100, and Urban100 [benchmark](https://drive.google.com/file/d/1y8kIpiAa5s-fZ_R5pd4Aq2wJFPfgXFxB/view?usp=sharing).
    iii) Put the images in a folder called `super_resolution`. So the folder structure should be:
-	
+    
+    .
+    ├── build                   # Compiled files (alternatively `dist`)
+    ├── docs                    # Documentation files (alternatively `doc`)
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    ├── test                    # Automated tests (alternatively `spec` or `tests`)
+    ├── tools                   # Tools and utilities
+    ├── LICENSE
+    └── README.md
+    
 	super_resolution
-    ├── DIV2K
+    	├── DIV2K
 	│	├── DIV2K_train_HR
 	│	├── DIV2K_train_LR_bicubic
 	│	│	├── X2
@@ -28,6 +37,7 @@
 	│	├── Urban100
 	│	└──
 	└──
+	
 3. Download the test model from [Google drive](https://drive.google.com/file/d/1dUi2GVO2QD6kNwYY71ZOA1vw0BxwNyfU/view?usp=sharing).
 4. Be sure to change the following directories in [./option.py](./option.py).
 	`--dir_data`: the directory where you put the dataset.
