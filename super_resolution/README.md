@@ -39,8 +39,8 @@
 	`--dir_data`: the directory where you put the dataset.
 
 	`--dir_save`: the directory where you want to save your the results.
-5. Go to [`./demo.sh`](./demo.sh) and change `DEVICES` to your available CUDA devices and `MODEL_PATH` to the directory where you put the test model.
-6. Run the demo commands in [`./demo.sh`](./demo.sh).
+5. Go to [`./scripts/demo.sh`](./scripts/demo.sh) and change `DEVICES` to your available CUDA devices and `MODEL_PATH` to the directory where you put the test model.
+6. Run the demo commands in [`./scripts/demo.sh`](./scripts/demo.sh).
 
 
 ## Reference

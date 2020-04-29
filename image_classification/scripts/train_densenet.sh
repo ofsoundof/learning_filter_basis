@@ -9,15 +9,11 @@ DEVICES=1
 ###########################
 MODEL=DenseNet_Basis
 N_BASIS=36
-N_GROUP=1
-K1=3
-K2=3
 T=6
-CHECKPOINT=${MODEL}_N${N_BASIS}G${N_GROUP}K${K1}K${K2}T${T}
+CHECKPOINT=${MODEL}_N${N_BASIS}T${T}
 echo $CHECKPOINT
 CUDA_VISIBLE_DEVICES=$DEVICES python ../main.py --template DenseNet --model ${MODEL} --batch_size 64 --epochs 400 --decay step-250-325 \
---transition_group ${T} --depth 40 --n_basis ${N_BASIS} --n_group ${N_GROUP} --k_size1 ${K1} --k_size2 ${K2} \
---save ${CHECKPOINT}
+--transition_group ${T} --depth 40 --n_basis ${N_BASIS} --save ${CHECKPOINT}
 
 
 ###########################
