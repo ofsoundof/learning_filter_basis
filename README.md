@@ -4,7 +4,7 @@ This repository is an official PyTorch implementation of the Paper **Learning Fi
 ## Contents
 1. [Introduction](#introduction)
 2. [Dependencies](#dependencies)
-3. [Quick Start](#quick-start)
+3. [Train and Test](#train-and-test)
 4. [Results](#results)
 5. [Reference](#reference)
 6. [Acknowledgements](#acknowledgements)
@@ -29,7 +29,7 @@ Illustration of the proposed basis learning method. Operations are converted to 
 * scikit-image
 * easydict
 
-## Quick start
+## Train and Test
 
 ### Image classification
 For image classfication, go to [`./image_classification`](./image_classification)
