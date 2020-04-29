@@ -11,6 +11,7 @@ import torch
 import torch.optim as optim
 import torch.optim.lr_scheduler as lrs
 
+
 class timer():
     def __init__(self):
         self.acc = 0
@@ -33,6 +34,7 @@ class timer():
 
     def reset(self):
         self.acc = 0
+
 
 class checkpoint():
     def __init__(self, args):
@@ -63,7 +65,6 @@ class checkpoint():
         _make_dir(self.dir)
         _make_dir(self.dir + '/model')
         _make_dir(self.dir + '/results/' + self.args.data_test)
-
         open_type = 'a' if os.path.exists(self.dir + '/log.txt') else 'w'
         self.log_file = open(self.dir + '/log.txt', open_type)
         with open(self.dir + '/config.txt', open_type) as f:

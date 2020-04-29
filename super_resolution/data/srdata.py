@@ -1,12 +1,9 @@
 import os
-
 from data import common
-
 import numpy as np
-import scipy.misc as misc
 import imageio
-import torch
 import torch.utils.data as data
+
 
 class SRData(data.Dataset):
     def __init__(self, args, train=True, benchmark=False):

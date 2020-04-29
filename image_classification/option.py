@@ -19,7 +19,7 @@ parser.add_argument('--seed', type=int, default=1,
                     help='random seed')
 
 # Data specifications
-parser.add_argument('--dir_data', default='../dataset',
+parser.add_argument('--dir_data', default='/home/thor/projects/data',
                     help='dataset directory')
 parser.add_argument('--data_train', default='CIFAR10',
                     help='train dataset name')
@@ -176,7 +176,7 @@ parser.add_argument('--loss', default='1*CE',
                     help='loss function configuration')
 
 # Log specifications
-parser.add_argument('--dir_save', default='/scratch_net/ofsoundof/yawli/logs_iccv19_classification',
+parser.add_argument('--dir_save', default='/home/thor/projects/logs/CL',
                     help='the directory used to save')
 parser.add_argument('--save', default='test',
                     help='file name to save')

@@ -30,7 +30,6 @@ class Trainer(object):
         self.error_last = 1e8
 
     def train(self):
-        self.scheduler.step()
         self.loss.step()
         epoch = self.scheduler.last_epoch + 1
         lr = self.scheduler.get_lr()[0]
@@ -44,7 +43,8 @@ class Trainer(object):
         if self.args.loss_norm:
             pretrain_state = torch.load(self.args.pre_train_optim)
         model_module = import_module('model.' + self.args.model.lower())
-        for batch, (lr, hr, _, idx_scale) in enumerate(self.loader_train):
+        idx_scale = self.args.scale
+        for batch, (lr, hr, _) in enumerate(self.loader_train):
             lr, hr = self.prepare([lr, hr])
             timer_data.hold()
             timer_model.tic()
@@ -103,7 +103,7 @@ class Trainer(object):
                 eval_acc = 0
                 self.loader_test.dataset.set_scale(idx_scale)
                 tqdm_test = tqdm(self.loader_test, ncols=80)
-                for idx_img, (lr, hr, filename, _) in enumerate(tqdm_test):
+                for idx_img, (lr, hr, filename) in enumerate(tqdm_test):
 
                     # from IPython import embed; embed();
                     filename = filename[0]
@@ -152,6 +152,7 @@ class Trainer(object):
                 os.path.join(self.ckp.dir, '{}_X{}_L{}.pt'.
                              format(self.args.model, self.args.scale[0], self.args.n_resblocks))
             )
+        self.scheduler.step()
 
     def prepare(self, l, volatile=False):
         device = torch.device('cpu' if self.args.cpu else 'cuda')

@@ -1,9 +1,8 @@
 import os
 from importlib import import_module
-
 import torch
 import torch.nn as nn
-from torch.autograd import Variable
+
 
 class Model(nn.Module):
     def __init__(self, args, ckp):

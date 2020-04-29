@@ -4,6 +4,7 @@ Date: 21/08/2019
 The final basis learning method for ResNet.
 There are two basis set in one ResBlock group.
 The 18 convs within one ResBlock group share the same basis. So there are 3 basis sets in total.
+Paper: Learning Filter Basis for Convolutional Neural Network Compression. ICCV 2019
 """
 
 import torch

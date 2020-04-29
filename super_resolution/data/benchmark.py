@@ -1,12 +1,7 @@
 import os
-from data import common
 from data import srdata
 import glob
-import numpy as np
-import scipy.misc as misc
 
-import torch
-import torch.utils.data as data
 
 class Benchmark(srdata.SRData):
     def __init__(self, args, train=True):
@@ -16,8 +11,8 @@ class Benchmark(srdata.SRData):
         list_hr = []
         list_lr = []
         for s in self.scale:
-            list_hr.append(sorted(glob.glob(self.dir_hr + '/*.png')))
-            list_lr.append(sorted(glob.glob(self.dir_lr + '/X{}/*.png'.format(s))))
+            list_hr.append(sorted(glob.glob(os.path.expanduser(os.path.join(self.dir_hr, '*.png')))))
+            list_lr.append(sorted(glob.glob(os.path.expanduser(os.path.join(self.dir_lr, 'X{}/*.png'.format(s))))))
 
         return list_hr, list_lr
 
@@ -26,3 +21,4 @@ class Benchmark(srdata.SRData):
         self.dir_hr = os.path.join(self.apath, 'HR')
         self.dir_lr = os.path.join(self.apath, 'LR_bicubic')
         self.ext = ('', '.png')
+

@@ -1,3 +1,7 @@
+"""
+Paper: Learning Filter Basis for Convolutional Neural Network Compression. ICCV 2019
+"""
+
 import os
 import torch
 import torch.nn as nn

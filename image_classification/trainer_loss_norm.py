@@ -162,6 +162,7 @@ class Trainer():
         is_best = self.loss.log_test[-1, self.args.top] <= best[0][self.args.top]
         self.ckp.save(self, epoch, is_best=is_best)
         self.ckp.save_results(epoch, self.model)
+        self.scheduler.step()
 
     def prepare(self, *args):
         def _prepare(x):
@@ -172,7 +173,6 @@ class Trainer():
         return [_prepare(a) for a in args]
 
     def start_epoch(self):
-        self.scheduler.step()
         # epoch = self.scheduler.last_epoch + 1
         # self.epoch += 1
         lr = self.scheduler.get_lr()[0]

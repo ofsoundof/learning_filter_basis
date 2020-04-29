@@ -3,6 +3,8 @@ Author: Yawei Li
 Date: 21/08/2019
 Group method
 group_size = 3 if in_channels <= 252 else 6
+Paper: Extreme Network Compression via Filter Group Approximation. ECCV
+This method uses a group convolution to approximate the original convolution. Referred to as "Group".
 """
 
 import math

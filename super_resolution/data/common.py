@@ -1,12 +1,7 @@
 import random
-
 import numpy as np
-import skimage.io as sio
 import skimage.color as sc
-import skimage.transform as st
-
 import torch
-from torchvision import transforms
 
 def get_patch(img_in, img_tar, patch_size, scale, multi_scale=False):
     ih, iw = img_in.shape[:2]

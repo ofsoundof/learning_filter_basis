@@ -1,3 +1,8 @@
+"""
+Paper: Factorized Convolutional Neural Networks. ICCV Workshop.
+This method factorizes a convolutional layer into a couple cheap convolutions. Referred to as "Factor".
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

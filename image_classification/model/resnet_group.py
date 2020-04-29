@@ -1,3 +1,8 @@
+"""
+Paper: Extreme Network Compression via Filter Group Approximation. ECCV
+This method uses a group convolution to approximate the original convolution. Referred to as "Group".
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
