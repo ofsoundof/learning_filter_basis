@@ -1,4 +1,4 @@
-# Learning Filter Basis for Convolutional Neural Network Compression
+# [Learning Filter Basis for Convolutional Neural Network Compression](https://arxiv.org/abs/1908.08932)
 This repository is an official PyTorch implementation of the Paper **Learning Filter Basis for Convolutional Neural Network Compression** accepted by ICCV 2019. The training scripts are updated.
 
 ## Contents
