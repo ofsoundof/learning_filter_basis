@@ -28,7 +28,7 @@
 
    i.   Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) training and validation images. Please download the low-resolution images in the NTIRE-2017 challenge. 
 
-   ii.  Download Set5, Set14, B100, and Urban100 benchmark from [GoogleDrive](https://drive.google.com/file/d/1y8kIpiAa5s-fZ_R5pd4Aq2wJFPfgXFxB/view?usp=sharing) or [BaiduPan (extraction code: e5ae)](https://pan.baidu.com/s/1al55wVZyuDkgKogY6TwtVw).
+   ii.  Download Set5, Set14, B100, and Urban100 benchmark from [Releases/v1.0.0](https://github.com/ofsoundof/learning_filter_basis/releases/tag/v1.0.0) or [BaiduPan (extraction code: e5ae)](https://pan.baidu.com/s/1al55wVZyuDkgKogY6TwtVw).
    
    iii. Put the images in a folder called `super_resolution`. So the folder structure should be like the one above.
 
@@ -48,7 +48,7 @@
     For more information, please refer to the train scripts in `./scripts`(./scripts)
 
 ## Test
-1. Download the test model from [GoogleDrive](https://drive.google.com/file/d/1dUi2GVO2QD6kNwYY71ZOA1vw0BxwNyfU/view?usp=sharing) or [BaiduPan (Extraction Code: vvfr)](https://pan.baidu.com/s/17ectGT1UkE-hsR2hhOJVBw).
+1. Download the test model from [Releases/v1.0.0](https://github.com/ofsoundof/learning_filter_basis/releases/tag/v1.0.0) or [BaiduPan (Extraction Code: vvfr)](https://pan.baidu.com/s/17ectGT1UkE-hsR2hhOJVBw).
 2. Be sure to change the following directories in [`./option.py`](./option.py).
 
 	`--dir_data`: the directory where you put the dataset.
