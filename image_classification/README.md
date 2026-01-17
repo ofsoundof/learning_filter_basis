@@ -21,7 +21,7 @@
     You can use scripts in `./scripts/train_XXX.sh` to reproduce the results in our paper. '`XXX`' denotes `vgg`, `densenet` and `resnet`.
 
 ## Test
-1. Download the test model from [GoogleDrive](https://drive.google.com/file/d/1OQJ-JzSs3qhP79_dRJAYu6J7g1bN5rgq/view?usp=sharing) or [BaiduPan (Extraction Code: qesq)](https://pan.baidu.com/s/18MP02c_j0tHpdlqkf9mUBQ).
+1. Download the test model from [Releases/v1.0.0](https://github.com/ofsoundof/learning_filter_basis/releases/tag/v1.0.0) or [BaiduPan (Extraction Code: qesq)](https://pan.baidu.com/s/18MP02c_j0tHpdlqkf9mUBQ).
 2. Go to [`./scripts/demo.sh`](./scripts/demo.sh) and change `DEVICES` to your available CUDA devices and `MODEL_PATH` to the directory where you put the test model.
 3. Run the demo commands in [`./scripts/demo.sh`](./scripts/demo.sh).
     ```bash
